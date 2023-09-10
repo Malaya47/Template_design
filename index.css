@@ -1,0 +1,265 @@
+body {
+  background-image: url("./Images/background.jpg");
+  object-fit: contain;
+  font-family: sans-serif;
+  color: white;
+}
+.nav-bar {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar img.logo {
+  object-fit: contain;
+  width: 150px;
+}
+
+/* .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+.search-elips-wrapper {
+  /* This class is added in HTML just to give proper spacing to the  icon beside search bar */
+  /* border: 1px solid red; */
+  width: 200px;
+}
+.search-elips-wrapper i {
+  margin-left: 10px;
+}
+.search-elips-wrapper input {
+  border: 2px solid #00af80;
+  border-radius: 10px;
+  height: 20px;
+  background-color: inherit;
+  color: white;
+}
+#search-bar::placeholder {
+  color: white;
+  text-align: right;
+}
+
+/* Section Start */
+
+div.sections-container {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-section {
+  border: 1px solid red;
+  width: 500px;
+  max-width: 400px;
+  flex-grow: 0;
+}
+.right-section {
+  border: 1px solid blue;
+  text-align: right;
+  flex-grow: 0;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.left-section h1 {
+  font-size: xx-large;
+  letter-spacing: 1px;
+}
+.left-section p {
+  line-height: 20px;
+}
+button.getIn-touch a {
+  text-decoration: none;
+  color: #20283b;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+button {
+  background-color: #00af80;
+  padding: 10px;
+  border-radius: 30px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+}
+
+/* social media  */
+div.social-media {
+  margin-top: 50px;
+}
+div.social-media a img {
+  width: 30px;
+}
+/* social media end */
+
+.right-section img.your-image {
+  object-fit: contain;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 1;
+}
+.right-section img.round-image {
+  object-fit: contain;
+  width: 180px;
+  height: 300px;
+  position: absolute;
+  left: 250px;
+}
+
+.right-section p {
+  position: absolute;
+  left: 230px;
+  top: 100px;
+}
+.right-section img.your-image-background {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+}
+
+/* Other images */
+div img.image-upper {
+  border: 1px solid red;
+  position: absolute;
+  width: 150px;
+  top: 110px;
+  left: 280px;
+}
+div img.image-upper-right {
+  position: absolute;
+  border: 1px solid red;
+  width: 70px;
+  left: 680px;
+  bottom: 440px;
+}
+div img.image-right-line {
+  position: absolute;
+  height: 150px;
+  left: 710px;
+  bottom: 210px;
+}
+
+div.outer-image-left img {
+  /* border: 2px solid red; */
+  height: 200px;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+}
+
+div.bottom-image img {
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+  left: 120px;
+}
+div.bottom-middle-image-1 img {
+  position: absolute;
+  height: 170px;
+  border: 1px solid red;
+  left: 500px;
+  top: 440px;
+}
+div.bottom-middle-image-2 img {
+  border: 1px solid red;
+  position: absolute;
+  width: 250px;
+  left: 560px;
+  bottom: -20px;
+}
+div.bottom-right-image img {
+  border: 1px solid red;
+  position: absolute;
+  height: 300px;
+  width: 170px;
+  right: 0;
+  bottom: 0;
+}
+/* MEDIA QUERIES */
+@media (max-width: 479px) and (min-width: 320px) {
+  .nav-bar {
+    border: 1px solid black;
+    flex-direction: column;
+  }
+  .nav-bar img.logo {
+    width: 100px;
+  }
+  div.search-elips-wrapper i {
+    display: none;
+  }
+  #search-bar::placeholder {
+    text-align: center;
+  }
+  div.search-elips-wrapper input {
+    width: 220px;
+  }
+  .nav-bar a {
+    font-size: 12px;
+    margin: 2px;
+  }
+
+  div.sections-container {
+    /* border: none; */
+    flex-wrap: wrap;
+    margin: 10px;
+    /* display: none; */
+  }
+  div img.image-upper {
+    left: 20px;
+    width: 70px;
+    top: 155px;
+  }
+  .right-section img.your-image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: -90px;
+  }
+  .right-section img.your-image-background {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    bottom: 115px;
+    left: -30px;
+  }
+  .right-section p {
+    position: relative;
+    top: -300px;
+    left: -50px;
+  }
+}
+div.bottom-right-image img {
+  display: none;
+}
+div.outer-image-left img {
+  display: none;
+}
+div.bottom-image img {
+  display: none;
+}
+div img.image-right-line {
+  display: none;
+}
+div.bottom-middle-image-1 img {
+  display: none;
+}
+div.bottom-middle-image-2 img {
+  display: none;
+}
