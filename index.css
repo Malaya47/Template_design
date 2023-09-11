@@ -14,6 +14,7 @@ body {
 .nav-bar a {
   color: white;
   text-decoration: none;
+  margin-left: 50px;
 }
 
 .nav-bar img.logo {
@@ -60,9 +61,8 @@ div.sections-container {
 
 .left-section {
   border: 1px solid red;
-  width: 500px;
-  max-width: 400px;
-  flex-grow: 0;
+  width: 600px;
+  position: relative;
 }
 .right-section {
   border: 1px solid blue;
@@ -73,7 +73,7 @@ div.sections-container {
   height: 500px;
 }
 .left-section h1 {
-  font-size: xx-large;
+  font-size: 50px;
   letter-spacing: 1px;
 }
 .left-section p {
@@ -107,58 +107,59 @@ div.social-media a img {
   object-fit: contain;
   width: 350px;
   height: 350px;
-  position: absolute;
-  top: 100px;
-  left: 0;
+  position: relative;
+  top: 80px;
+  left: 100px;
   z-index: 1;
 }
 .right-section img.round-image {
   object-fit: contain;
-  width: 180px;
-  height: 300px;
-  position: absolute;
-  left: 250px;
+  width: 140px;
+  height: 200px;
+  position: relative;
+  top: -100px;
 }
 
 .right-section p {
-  position: absolute;
-  left: 230px;
-  top: 100px;
+  position: relative;
+  top: -680px;
+  right: 60px;
 }
 .right-section img.your-image-background {
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 430px;
   object-fit: contain;
-  position: absolute;
-  left: 25px;
-  bottom: 15px;
+  position: relative;
+  top: -328px;
+  right: 40px;
 }
 
 /* Other images */
-div img.image-upper {
+
+img.image-upper {
   border: 1px solid red;
   position: absolute;
-  width: 150px;
-  top: 110px;
-  left: 280px;
+  width: 120px;
+  top: 0;
+  left: 0;
 }
 div img.image-upper-right {
   position: absolute;
   border: 1px solid red;
   width: 70px;
-  left: 680px;
-  bottom: 440px;
+  top: 0;
+  right: 0;
 }
 div img.image-right-line {
   position: absolute;
   height: 150px;
-  left: 710px;
-  bottom: 210px;
+  right: 30px;
+  top: 150px;
 }
 
 div.outer-image-left img {
   /* border: 2px solid red; */
-  height: 200px;
+  height: 150px;
   position: absolute;
   bottom: 90px;
   left: 0;
@@ -172,17 +173,19 @@ div.bottom-image img {
 }
 div.bottom-middle-image-1 img {
   position: absolute;
-  height: 170px;
+  height: 100px;
+  width: 150px;
   border: 1px solid red;
-  left: 500px;
-  top: 440px;
+  top: 400px;
+  left: 250px;
 }
 div.bottom-middle-image-2 img {
   border: 1px solid red;
   position: absolute;
-  width: 250px;
-  left: 560px;
-  bottom: -20px;
+  width: 190px;
+  height: 100px;
+  left: 400px;
+  bottom: -10px;
 }
 div.bottom-right-image img {
   border: 1px solid red;
@@ -193,10 +196,18 @@ div.bottom-right-image img {
   bottom: 0;
 }
 /* MEDIA QUERIES */
-@media (max-width: 479px) and (min-width: 320px) {
+/* @media (max-width: 479px) and (min-width: 320px) {
   .nav-bar {
     border: 1px solid black;
     flex-direction: column;
+    align-items: center;
+  }
+  .left-section {
+    order: 2;
+  }
+  .right-section {
+    height: 300px;
+    order: 1;
   }
   .nav-bar img.logo {
     width: 100px;
@@ -216,15 +227,15 @@ div.bottom-right-image img {
   }
 
   div.sections-container {
-    /* border: none; */
+    width: 100%;
+
     flex-wrap: wrap;
     margin: 10px;
-    /* display: none; */
   }
   div img.image-upper {
     left: 20px;
     width: 70px;
-    top: 155px;
+    top: 460px;
   }
   .right-section img.your-image {
     position: relative;
@@ -241,8 +252,15 @@ div.bottom-right-image img {
   }
   .right-section p {
     position: relative;
-    top: -300px;
-    left: -50px;
+    font-size: 12px;
+    top: -310px;
+    left: -40px;
+  }
+  .right-section img.round-image {
+    left: 170px;
+    width: 120px;
+    height: 200px;
+    top: 20px;
   }
 }
 div.bottom-right-image img {
@@ -263,3 +281,6 @@ div.bottom-middle-image-1 img {
 div.bottom-middle-image-2 img {
   display: none;
 }
+div img.image-upper-right {
+  display: none;
+} */
